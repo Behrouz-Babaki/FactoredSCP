@@ -1,0 +1,74 @@
+net
+{
+	propagationenginegenerator1791944048146838126L = "edu.ucla.belief.approx.BeliefPropagationSettings@5a83e695";
+	recoveryenginegenerator6944530267470113528l = "edu.ucla.util.SettingsImpl@284c7c35";
+	node_size = (130.0 55.0);
+}
+
+node d0
+{
+	states = ("v2" "v4" );
+	position = (323 -320);
+	diagnosistype = "AUXILIARY";
+	DSLxSUBMODEL = "Root Submodel";
+	ismapvariable = "false";
+	ID = "variable1";
+	label = "d0";
+	DSLxEXTRA_DEFINITIONxDIAGNOSIS_TYPE = "AUXILIARY";
+	excludepolicy = "include whole CPT";
+}
+node h1
+{
+	states = ("v1" "v2" );
+	position = (627 -191);
+	diagnosistype = "AUXILIARY";
+	DSLxSUBMODEL = "Root Submodel";
+	ismapvariable = "false";
+	ID = "variable2";
+	label = "h1";
+	DSLxEXTRA_DEFINITIONxDIAGNOSIS_TYPE = "AUXILIARY";
+	excludepolicy = "include whole CPT";
+}
+node d1
+{
+	states = ("v2" "v4" );
+	position = (644 -321);
+	diagnosistype = "AUXILIARY";
+	DSLxSUBMODEL = "Root Submodel";
+	ismapvariable = "false";
+	ID = "variable1";
+	label = "d1";
+	DSLxEXTRA_DEFINITIONxDIAGNOSIS_TYPE = "AUXILIARY";
+	excludepolicy = "include whole CPT";
+}
+node h0
+{
+	states = ("v1" "v2" );
+	position = (322 -177);
+	diagnosistype = "AUXILIARY";
+	DSLxSUBMODEL = "Root Submodel";
+	ismapvariable = "false";
+	ID = "variable0";
+	label = "h0";
+	DSLxEXTRA_DEFINITIONxDIAGNOSIS_TYPE = "AUXILIARY";
+	excludepolicy = "include whole CPT";
+}
+potential ( d0 | h0 )
+{
+	data = ((	0.4	0.6	)
+		(	0.5	0.5	));
+}
+potential ( h1 | h0 )
+{
+	data = ((	0.5	0.5	)
+		(	0.5	0.5	));
+}
+potential ( d1 | h1 )
+{
+	data = ((	0.4	0.6	)
+		(	0.5	0.5	));
+}
+potential ( h0 | )
+{
+	data = (	0.5	0.5	);
+}

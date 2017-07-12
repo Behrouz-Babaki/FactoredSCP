@@ -1,0 +1,48 @@
+net
+{
+	propagationenginegenerator1791944048146838126L = "edu.ucla.belief.approx.BeliefPropagationSettings@3c897d5f";
+	recoveryenginegenerator6944530267470113528l = "edu.ucla.util.SettingsImpl@5d97d51e";
+	node_size = (130 55);
+}
+
+node w0
+{
+	states = ("v20" "v30" );
+	position = (192 -223);
+	ismapvariable = "false";
+	label = "w0";
+	diagnosistype = "AUXILIARY";
+	excludepolicy = "include whole CPT";
+}
+node h0
+{
+	states = ("v1" "v2" );
+	position = (284 -123);
+	ismapvariable = "false";
+	label = "h0";
+	diagnosistype = "AUXILIARY";
+	excludepolicy = "include whole CPT";
+}
+node r0
+{
+	states = ("v10" "v20" );
+	position = (367 -231);
+	ismapvariable = "false";
+	label = "r0";
+	diagnosistype = "AUXILIARY";
+	excludepolicy = "include whole CPT";
+}
+potential ( w0 | h0 )
+{
+	data = ((	0.5	0.5	)
+		(	0.5	0.5	));
+}
+potential ( h0 | )
+{
+	data = (	0.5	0.5	);
+}
+potential ( r0 | h0 )
+{
+	data = ((	0.5	0.5	)
+		(	0.5	0.5	));
+}

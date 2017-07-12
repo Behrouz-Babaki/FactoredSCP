@@ -1,0 +1,59 @@
+node w0
+{
+	states = ("v20" "v30" );
+	label = "w0";
+}
+node r1
+{
+	states = ("v10" "v20" );
+	label = "r1";
+}
+node h0
+{
+	states = ("v1" "v2" );
+	label = "h0";
+}
+node r0
+{
+	states = ("v10" "v20" );
+	label = "r0";
+}
+node h1
+{
+	states = ("v1" "v2" );
+	label = "h1";
+}
+node w1
+{
+	states = ("v20" "v30" );
+	label = "w1";
+}
+potential ( w0 | h0 )
+{
+	data = ((	0.5	0.5	)
+		(	0.5	0.5	));
+}
+potential ( r1 | h1 )
+{
+	data = ((	0.5	0.5	)
+		(	0.5	0.5	));
+}
+potential ( h0 | )
+{
+	data = (	0.5	0.5	);
+}
+potential ( r0 | h0 )
+{
+	data = ((	0.5	0.5	)
+		(	0.5	0.5	));
+}
+potential ( h1 | h0 )
+{
+	data = ((	0.5	0.5	)
+		(	0.5	0.5	));
+}
+potential ( w1 | h1 )
+{
+	data = ((	0.5	0.5	)
+		(	0.5	0.5	));
+}

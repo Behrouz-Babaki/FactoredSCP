@@ -1,0 +1,22 @@
+c Following is the literal map:
+c
+cc$N$7
+cc$V$d0$2$v2$v4
+cc$V$d1$2$v2$v4
+cc$V$h0$2$v1$v2
+cc$V$h1$2$v1$v2
+cc$I$-1$1.0$d0$v2$0
+cc$I$1$1.0$d0$v4$1
+cc$I$-2$1.0$d1$v2$0
+cc$I$2$1.0$d1$v4$1
+cc$I$-3$1.0$h0$v1$0
+cc$I$3$1.0$h0$v2$1
+cc$I$-4$1.0$h1$v1$0
+cc$I$4$1.0$h1$v2$1
+cc$A$-5$1.0
+cc$A$5$0.5
+cc$A$-6$1.0
+cc$A$6$0.4
+cc$A$-7$1.0
+cc$A$7$0.6
+
